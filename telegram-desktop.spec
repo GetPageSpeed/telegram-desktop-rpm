@@ -8,7 +8,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    2.8.10
+Version:    2.8.9
 Release:    1%{?dist}
 
 Group:		Applications/Internet
