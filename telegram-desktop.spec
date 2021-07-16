@@ -81,13 +81,8 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
-* Sat Jul 16 2021 Danila Vershinin <info@getpagespeed.com>
+* Fri Jul 16 2021 Danila Vershinin <info@getpagespeed.com>
 - upstream release v2.8.10
-
-
-* Sat Jul 17 2021 Danila Vershinin <info@getpagespeed.com>
-- upstream release v2.8.10
-
 
 * Fri Jul 16 2021 Danila Vershinin <info@getpagespeed.com> 2.8.8-1
 - release 2.8.8
