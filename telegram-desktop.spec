@@ -21,7 +21,11 @@ Source3:	telegram.desktop
 Source4:	%{name}.appdata.xml
 
 BuildRequires:	desktop-file-utils
+%if (0%{?suse_version})
+BuildRequires:	appstream-glib
+%else
 BuildRequires:	libappstream-glib
+%endif
 
 
 %description
