@@ -3,6 +3,7 @@
 %global lastversion_tag v%{version}
 %global lastversion_dir %{upstream_name}-%{version}
 
+%global lastversion_having_asset "Linux 64 bit: Binary"
 
 %global debug_package %{nil}
 
