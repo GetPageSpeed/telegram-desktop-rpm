@@ -28,6 +28,9 @@ BuildRequires:	appstream-glib
 BuildRequires:	libappstream-glib
 %endif
 
+# This package is only for x86_64
+ExclusiveArch:	x86_64
+
 
 %description
 Telegram is a messaging app with a focus on speed and security, it’s super
