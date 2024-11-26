@@ -111,7 +111,9 @@ workflows:
         filters:
           branches:
             only:
+            - main
             - master
+            - stable
             - main
     - deploy:
         name: deploy-el7-x86_64
@@ -121,7 +123,9 @@ workflows:
         filters:
           branches:
             only:
+            - main
             - master
+            - stable
             - main
         requires:
         - build-el7-x86_64
@@ -134,7 +138,9 @@ workflows:
         filters:
           branches:
             only:
+            - main
             - master
+            - stable
             - main
     - deploy:
         name: deploy-el8-x86_64
@@ -144,7 +150,9 @@ workflows:
         filters:
           branches:
             only:
+            - main
             - master
+            - stable
             - main
         requires:
         - build-el8-x86_64
@@ -157,7 +165,9 @@ workflows:
         filters:
           branches:
             only:
+            - main
             - master
+            - stable
             - main
     - deploy:
         name: deploy-el9-x86_64
@@ -167,7 +177,9 @@ workflows:
         filters:
           branches:
             only:
+            - main
             - master
+            - stable
             - main
         requires:
         - build-el9-x86_64
@@ -180,7 +192,9 @@ workflows:
         filters:
           branches:
             only:
+            - main
             - master
+            - stable
             - main
     - deploy:
         name: deploy-fc41-x86_64
@@ -190,7 +204,9 @@ workflows:
         filters:
           branches:
             only:
+            - main
             - master
+            - stable
             - main
         requires:
         - build-fc41-x86_64
@@ -203,7 +219,9 @@ workflows:
         filters:
           branches:
             only:
+            - main
             - master
+            - stable
             - main
     - deploy:
         name: deploy-fc40-x86_64
@@ -213,7 +231,9 @@ workflows:
         filters:
           branches:
             only:
+            - main
             - master
+            - stable
             - main
         requires:
         - build-fc40-x86_64
@@ -226,7 +246,9 @@ workflows:
         filters:
           branches:
             only:
+            - main
             - master
+            - stable
             - main
     - deploy:
         name: deploy-amzn2-x86_64
@@ -236,7 +258,9 @@ workflows:
         filters:
           branches:
             only:
+            - main
             - master
+            - stable
             - main
         requires:
         - build-amzn2-x86_64
@@ -249,7 +273,9 @@ workflows:
         filters:
           branches:
             only:
+            - main
             - master
+            - stable
             - main
     - deploy:
         name: deploy-amzn2023-x86_64
@@ -259,7 +285,9 @@ workflows:
         filters:
           branches:
             only:
+            - main
             - master
+            - stable
             - main
         requires:
         - build-amzn2023-x86_64
@@ -272,7 +300,9 @@ workflows:
         filters:
           branches:
             only:
+            - main
             - master
+            - stable
             - main
     - deploy:
         name: deploy-sles15-x86_64
@@ -282,7 +312,9 @@ workflows:
         filters:
           branches:
             only:
+            - main
             - master
+            - stable
             - main
         requires:
         - build-sles15-x86_64
