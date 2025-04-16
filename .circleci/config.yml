@@ -211,6 +211,33 @@ workflows:
             - main
         requires:
         - build-el10-x86_64
+  build-deploy-fc42-x86_64:
+    jobs:
+    - build:
+        name: build-fc42-x86_64
+        context: org-global
+        dist: fc42
+        filters:
+          branches:
+            only:
+            - main
+            - master
+            - stable
+            - main
+    - deploy:
+        name: deploy-fc42-x86_64
+        context: org-global
+        dist: fc42
+        arch: x86_64
+        filters:
+          branches:
+            only:
+            - main
+            - master
+            - stable
+            - main
+        requires:
+        - build-fc42-x86_64
   build-deploy-fc41-x86_64:
     jobs:
     - build:
@@ -238,33 +265,6 @@ workflows:
             - main
         requires:
         - build-fc41-x86_64
-  build-deploy-fc40-x86_64:
-    jobs:
-    - build:
-        name: build-fc40-x86_64
-        context: org-global
-        dist: fc40
-        filters:
-          branches:
-            only:
-            - main
-            - master
-            - stable
-            - main
-    - deploy:
-        name: deploy-fc40-x86_64
-        context: org-global
-        dist: fc40
-        arch: x86_64
-        filters:
-          branches:
-            only:
-            - main
-            - master
-            - stable
-            - main
-        requires:
-        - build-fc40-x86_64
   build-deploy-amzn2-x86_64:
     jobs:
     - build:
