@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.2.3
+Version:    6.2.4
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,10 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Thu Oct 23 2025 Danila Vershinin <info@getpagespeed.com>
+- upstream release v6.2.4
+
+
 * Mon Oct 13 2025 Danila Vershinin <info@getpagespeed.com>
 - upstream release v6.2.3
 
