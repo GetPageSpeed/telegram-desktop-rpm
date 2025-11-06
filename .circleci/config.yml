@@ -211,6 +211,33 @@ workflows:
             - main
         requires:
         - build-el10-x86_64
+  build-deploy-fc43-x86_64:
+    jobs:
+    - build:
+        name: build-fc43-x86_64
+        context: org-global
+        dist: fc43
+        filters:
+          branches:
+            only:
+            - main
+            - master
+            - stable
+            - main
+    - deploy:
+        name: deploy-fc43-x86_64
+        context: org-global
+        dist: fc43
+        arch: x86_64
+        filters:
+          branches:
+            only:
+            - main
+            - master
+            - stable
+            - main
+        requires:
+        - build-fc43-x86_64
   build-deploy-fc42-x86_64:
     jobs:
     - build:
@@ -238,33 +265,6 @@ workflows:
             - main
         requires:
         - build-fc42-x86_64
-  build-deploy-fc41-x86_64:
-    jobs:
-    - build:
-        name: build-fc41-x86_64
-        context: org-global
-        dist: fc41
-        filters:
-          branches:
-            only:
-            - main
-            - master
-            - stable
-            - main
-    - deploy:
-        name: deploy-fc41-x86_64
-        context: org-global
-        dist: fc41
-        arch: x86_64
-        filters:
-          branches:
-            only:
-            - main
-            - master
-            - stable
-            - main
-        requires:
-        - build-fc41-x86_64
   build-deploy-amzn2-x86_64:
     jobs:
     - build:
@@ -319,12 +319,12 @@ workflows:
             - main
         requires:
         - build-amzn2023-x86_64
-  build-deploy-sles15-x86_64:
+  build-deploy-sles16-x86_64:
     jobs:
     - build:
-        name: build-sles15-x86_64
+        name: build-sles16-x86_64
         context: org-global
-        dist: sles15
+        dist: sles16
         filters:
           branches:
             only:
@@ -333,9 +333,9 @@ workflows:
             - stable
             - main
     - deploy:
-        name: deploy-sles15-x86_64
+        name: deploy-sles16-x86_64
         context: org-global
-        dist: sles15
+        dist: sles16
         arch: x86_64
         filters:
           branches:
@@ -345,4 +345,4 @@ workflows:
             - stable
             - main
         requires:
-        - build-sles15-x86_64
+        - build-sles16-x86_64
