@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.3.0
+Version:    6.3.1
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,14 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Tue Nov 18 2025 Danila Vershinin <info@getpagespeed.com> - 6.3.1-1
+- Reordered saved music in My Profile.
+- Fixed cover overlapping information in My Profile.
+- Resolved issues opening stories from My Profile.
+- Fixed media viewer breaking after Live Stories.
+- Addressed several potential crashes.
+
+
 * Sun Nov 16 2025 Danila Vershinin <info@getpagespeed.com> - 6.3.0-1
 - Added support for Gift auctions.
 - Introduced support for Live stories.
