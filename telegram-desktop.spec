@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.3.1
+Version:    6.3.2
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,13 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Fri Nov 21 2025 Danila Vershinin <info@getpagespeed.com> - 6.3.2-1
+- Improved support for gift auctions.
+- Reordered stories in My Profile albums.
+- Fixed bugs in new profile cover design.
+- Added Saved Music to data export.
+
+
 * Tue Nov 18 2025 Danila Vershinin <info@getpagespeed.com> - 6.3.1-1
 - Reordered saved music in My Profile.
 - Fixed cover overlapping information in My Profile.
