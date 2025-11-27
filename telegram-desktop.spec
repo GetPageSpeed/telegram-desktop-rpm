@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.3.3
+Version:    6.3.4
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,15 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Thu Nov 27 2025 Danila Vershinin <info@getpagespeed.com> - 6.3.4-1
+- Show active auctions above chats list.
+- Add star sending effects in live stories.
+- Fix back button in group member profile view.
+- Export separate topics message history.
+- Export audio files saved to profile.
+- Implement various crash fixes.
+
+
 * Sat Nov 22 2025 Danila Vershinin <info@getpagespeed.com> - 6.3.3-1
 - Improved functionality for gift auctions.
 - Enhanced user experience in auction features.
