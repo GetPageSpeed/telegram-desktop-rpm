@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.3.6
+Version:    6.3.8
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,10 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Tue Dec 16 2025 Danila Vershinin <info@getpagespeed.com> - 6.3.8-1
+- Fix crash issue on older Linux systems.
+
+
 * Sun Dec 07 2025 Danila Vershinin <info@getpagespeed.com> - 6.3.6-1
 - Fix crash in media viewer.
 - Fix crash in experimental settings.
