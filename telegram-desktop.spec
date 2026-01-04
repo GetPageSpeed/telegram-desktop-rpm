@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.3.9
+Version:    6.4.0
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,15 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Sun Jan 04 2026 Danila Vershinin <info@getpagespeed.com> - 6.4.0-1
+- Added AI Summaries feature for channel posts.
+- Improved performance and stability across the application.
+- Fixed various bugs affecting user experience.
+- Enhanced security measures for user data protection.
+- Updated dependencies for better compatibility.
+- Minor UI improvements for better usability.
+
+
 * Wed Dec 17 2025 Danila Vershinin <info@getpagespeed.com> - 6.3.9-1
 - Fix crash in audio playback speed menu.
 - Fix crash when deleting forum or bot topics.
