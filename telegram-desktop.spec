@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.4.0
+Version:    6.4.1
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,11 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Tue Jan 06 2026 Danila Vershinin <info@getpagespeed.com> - 6.4.1-1
+- Fix context menu double activations.
+- Improve text rendering in animating bubbles.
+
+
 * Sun Jan 04 2026 Danila Vershinin <info@getpagespeed.com> - 6.4.0-1
 - Added AI Summaries feature for channel posts.
 - Improved performance and stability across the application.
