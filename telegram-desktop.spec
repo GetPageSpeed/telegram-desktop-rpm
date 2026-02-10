@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.5.0
+Version:    6.5.1
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,14 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Tue Feb 10 2026 Danila Vershinin <info@getpagespeed.com> - 6.5.1-1
+- Added drag-and-drop functionality for chats to folders.
+- Fixed crash when adding Recommended folders.
+- Resolved crash in gifts selection layer.
+- Restored missing Login Email button in Settings.
+- Improved tab focus for chat search with hashtags.
+
+
 * Sun Feb 08 2026 Danila Vershinin <info@getpagespeed.com> - 6.5.0-1
 - New feature: Leave Groups to a New Admin.
 - Added Log In With Telegram option.
