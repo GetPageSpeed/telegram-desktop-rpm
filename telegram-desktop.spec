@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.5.1
+Version:    6.6.0
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,14 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Mon Mar 02 2026 Danila Vershinin <info@getpagespeed.com> - 6.6.0-1
+- Added member tags in group chats.
+- Disabled sharing feature in private chats.
+- Introduced timestamps for polls.
+- Enabled login with Telegram account.
+- Improved time and date formatting.
+
+
 * Tue Feb 10 2026 Danila Vershinin <info@getpagespeed.com> - 6.5.1-1
 - Added drag-and-drop functionality for chats to folders.
 - Fixed crash when adding Recommended folders.
