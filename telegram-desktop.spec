@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.6.0
+Version:    6.6.1
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,13 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Tue Mar 03 2026 Danila Vershinin <info@getpagespeed.com> - 6.6.1-1
+- Fix crash in legacy groups members list.
+- Improve display of member tags in legacy groups.
+- Fast reply button now appears instantly.
+- Option to hide fast reply button added.
+
+
 * Mon Mar 02 2026 Danila Vershinin <info@getpagespeed.com> - 6.6.0-1
 - Added member tags in group chats.
 - Disabled sharing feature in private chats.
