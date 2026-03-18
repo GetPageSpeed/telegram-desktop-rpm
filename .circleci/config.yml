@@ -52,6 +52,8 @@ jobs:
         name: 'Run the build itself: this will do rpmlint and check RPMs existence
           among other things.'
         command: build
+    - store_test_results:
+        path: /output/test-results
     - run:
         name: Check for RPM files and halt if none exist
         command: |-
