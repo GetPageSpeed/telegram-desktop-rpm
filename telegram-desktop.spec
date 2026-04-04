@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.7.1
+Version:    6.7.2
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,16 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Sat Apr 04 2026 Danila Vershinin <info@getpagespeed.com> - 6.7.2-1
+- Added system audio capture for desktop sharing on macOS.
+- Split playback speeds for voice and audio.
+- Introduced unread media dot for voice messages.
+- Added 'x' button to AI Tools promo toast.
+- Fixed long forward messages preview issue.
+- Resolved custom emoji reaction search by category.
+- Fixed double context menu in photo sending confirmation.
+
+
 * Thu Apr 02 2026 Danila Vershinin <info@getpagespeed.com> - 6.7.1-1
 - Fixed crash in emoji panel animation.
 
