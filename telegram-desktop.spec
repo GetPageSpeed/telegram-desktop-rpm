@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.7.2
+Version:    6.7.5
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,10 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Wed Apr 08 2026 Danila Vershinin <info@getpagespeed.com> - 6.7.5-1
+- Added support for gradual appearance of bot reply messages.
+
+
 * Sat Apr 04 2026 Danila Vershinin <info@getpagespeed.com> - 6.7.2-1
 - Added system audio capture for desktop sharing on macOS.
 - Split playback speeds for voice and audio.
