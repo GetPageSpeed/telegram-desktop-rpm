@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.7.5
+Version:    6.7.6
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,16 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Thu Apr 16 2026 Danila Vershinin <info@getpagespeed.com> - 6.7.6-1
+- Added gradient-reveal animation for message text.
+- Enabled draw-to-reply from shared media.
+- Introduced frame-by-frame stepping in media view.
+- Fixed loading issues for stickers and emoji search.
+- Custom emoji picker added for premium reactions.
+- Search functionality improved in pinned messages.
+- Recent search entries now visible in settings.
+
+
 * Wed Apr 08 2026 Danila Vershinin <info@getpagespeed.com> - 6.7.5-1
 - Added support for gradual appearance of bot reply messages.
 
