@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.7.6
+Version:    6.7.8
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,16 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Sat Apr 25 2026 Danila Vershinin <info@getpagespeed.com> - 6.7.8-1
+- Added proxy auto-rotation option.
+- Enabled seeking in video messages.
+- Styled text items now support emojis.
+- Introduced wheel zoom and panning in image editor.
+- Manage and delete owned custom emoji packs.
+- New submenus for adding foreign sticker and emoji packs.
+- Improved reply header with file preview.
+
+
 * Thu Apr 16 2026 Danila Vershinin <info@getpagespeed.com> - 6.7.6-1
 - Added gradient-reveal animation for message text.
 - Enabled draw-to-reply from shared media.
