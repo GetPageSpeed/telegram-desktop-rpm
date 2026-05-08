@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.7.8
+Version:    6.8.0
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,16 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Fri May 08 2026 Danila Vershinin <info@getpagespeed.com> - 6.8.0-1
+- AI bots can now be tagged for answers in chats.
+- New Chat Automation feature connects bots to user profiles.
+- Custom AI styles available in text editor.
+- Enhanced emoji and stickers search by keywords.
+- Poll statistics now include charts and vote restrictions.
+- Users can delete specific reactions in groups.
+- Image editor improvements for brush size and text styles.
+
+
 * Sat Apr 25 2026 Danila Vershinin <info@getpagespeed.com> - 6.7.8-1
 - Added proxy auto-rotation option.
 - Enabled seeking in video messages.
