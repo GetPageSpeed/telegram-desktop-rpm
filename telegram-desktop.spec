@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.8.0
+Version:    6.8.1
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,11 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Sat May 09 2026 Danila Vershinin <info@getpagespeed.com> - 6.8.1-1
+- Fix crash when anonymous group admins send messages.
+- Resolve issue with sending reactions in channels.
+
+
 * Fri May 08 2026 Danila Vershinin <info@getpagespeed.com> - 6.8.0-1
 - AI bots can now be tagged for answers in chats.
 - New Chat Automation feature connects bots to user profiles.
