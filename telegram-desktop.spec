@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.8.1
+Version:    6.8.2
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,16 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Wed May 13 2026 Danila Vershinin <info@getpagespeed.com> - 6.8.2-1
+- Fix sending existing custom reactions for non-premium users.
+- Resolve sending reactions to non-member groups.
+- Correct emoji pack viewing from search results.
+- Improve portrait 4K video playback stability.
+- Prevent lost captions on forwarded polls.
+- Fix potential crashes in reaction reports.
+- Restore 'Chatbots' feature for Telegram Business.
+
+
 * Sat May 09 2026 Danila Vershinin <info@getpagespeed.com> - 6.8.1-1
 - Fix crash when anonymous group admins send messages.
 - Resolve issue with sending reactions in channels.
