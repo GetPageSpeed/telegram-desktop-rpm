@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.8.2
+Version:    6.9.1
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,11 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Wed Jun 10 2026 Danila Vershinin <info@getpagespeed.com> - 6.9.1-1
+- Fixed issue with sending multiple identical custom emojis.
+- Resolved layout glitches in rich message display.
+
+
 * Wed May 13 2026 Danila Vershinin <info@getpagespeed.com> - 6.8.2-1
 - Fix sending existing custom reactions for non-premium users.
 - Resolve sending reactions to non-member groups.
