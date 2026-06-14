@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.9.2
+Version:    6.9.3
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,12 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Sun Jun 14 2026 Danila Vershinin <info@getpagespeed.com> - 6.9.3-1
+- Fix crash in formula parsing.
+- Resolve field resize issues after Undo/Redo.
+- Improve OpenGL support in Windows build.
+
+
 * Sat Jun 13 2026 Danila Vershinin <info@getpagespeed.com> - 6.9.2-1
 - Fix crash during OpenGL initialization on Linux.
 - Resolve crash issues in calls on Windows ARM.
