@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    6.9.3
+Version:    7.0.1
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,12 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Wed Jul 15 2026 Danila Vershinin <info@getpagespeed.com> - 7.0.1-1
+- Introduced Rich Text Editor for enhanced message formatting.
+- Added support for Telegram Communities for group management.
+- Implemented Invisible Bot Messages feature for improved privacy.
+
+
 * Sun Jun 14 2026 Danila Vershinin <info@getpagespeed.com> - 6.9.3-1
 - Fix crash in formula parsing.
 - Resolve field resize issues after Undo/Redo.
