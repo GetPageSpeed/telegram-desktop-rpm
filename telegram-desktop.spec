@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    7.0.1
+Version:    7.0.2
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,14 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Sat Jul 18 2026 Danila Vershinin <info@getpagespeed.com> - 7.0.2-1
+- Fix editing of existing rich messages.
+- Fix editing of scheduled rich messages.
+- Enhance rich messages editor with drag-and-drop support.
+- Improve table editing in rich messages.
+- Allow forwarding to hidden community chats.
+
+
 * Wed Jul 15 2026 Danila Vershinin <info@getpagespeed.com> - 7.0.1-1
 - Introduced Rich Text Editor for enhanced message formatting.
 - Added support for Telegram Communities for group management.
