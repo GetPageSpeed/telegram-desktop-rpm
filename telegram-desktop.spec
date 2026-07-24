@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    7.0.4
+Version:    7.0.5
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,13 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Fri Jul 24 2026 Danila Vershinin <info@getpagespeed.com> - 7.0.5-1
+- Improved slideshow preload and animation in rich messages.
+- Fixed empty space issue for stories in chat list.
+- Adjusted custom emoji frame size in favorite reactions.
+- Implemented various crash fixes.
+
+
 * Wed Jul 22 2026 Danila Vershinin <info@getpagespeed.com> - 7.0.4-1
 - Enable rich text editor for scheduled messages and quick replies.
 - Upload rich message photos in high quality.
