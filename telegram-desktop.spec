@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    7.0.5
+Version:    7.0.6
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,13 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Tue Jul 28 2026 Danila Vershinin <info@getpagespeed.com> - 7.0.6-1
+- Added option to mute profiles indefinitely with a left click.
+- Enhanced rich message previews for tables, tasks, and titles.
+- Resolved issues with adding admins in communities.
+- Implemented various crash fixes.
+
+
 * Fri Jul 24 2026 Danila Vershinin <info@getpagespeed.com> - 7.0.5-1
 - Improved slideshow preload and animation in rich messages.
 - Fixed empty space issue for stories in chat list.
