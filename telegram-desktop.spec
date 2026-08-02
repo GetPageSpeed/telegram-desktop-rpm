@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    7.0.6
+Version:    7.0.7
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,15 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Sun Aug 02 2026 Danila Vershinin <info@getpagespeed.com> - 7.0.7-1
+- Add geometric shapes to the image editor.
+- Improve passkeys support across Windows, macOS, and Linux.
+- Implement undo for moving and resizing items in the image editor.
+- Extend pull gesture for unread forum topics in chats list.
+- Fix Mini App cookies functionality on Linux.
+- Address various crash issues.
+
+
 * Tue Jul 28 2026 Danila Vershinin <info@getpagespeed.com> - 7.0.6-1
 - Added option to mute profiles indefinitely with a left click.
 - Enhanced rich message previews for tables, tasks, and titles.
