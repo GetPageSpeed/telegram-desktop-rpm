@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    7.0.7
+Version:    7.0.9
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,13 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Fri Aug 07 2026 Danila Vershinin <info@getpagespeed.com> - 7.0.9-1
+- Added saving rich messages to HTML and importing them back.
+- Introduced custom prompt tab for AI editing.
+- Added experimental Vulkan rendering option for Linux users.
+- Implemented various crash fixes.
+
+
 * Sun Aug 02 2026 Danila Vershinin <info@getpagespeed.com> - 7.0.7-1
 - Add geometric shapes to the image editor.
 - Improve passkeys support across Windows, macOS, and Linux.
