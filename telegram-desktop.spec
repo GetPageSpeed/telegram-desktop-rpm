@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    7.1.3
+Version:    7.1.5
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,13 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Thu Sep 03 2026 Danila Vershinin <info@getpagespeed.com> - 7.1.5-1
+- Fix crash issue on Linux.
+- Improved stability and performance.
+- Updated dependencies for better compatibility.
+- Minor UI enhancements for user experience.
+
+
 * Fri Aug 28 2026 Danila Vershinin <info@getpagespeed.com> - 7.1.3-1
 - upstream release v7.1.3
 
