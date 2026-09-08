@@ -15,7 +15,7 @@ Release: 1%{?dist}
 Group:		Applications/Internet
 License:	GPLv3
 URL:		https://github.com/%{upstream_github}/%{upstream_name}
-Source1:	%{url}/releases/download/%{lastversion_tag}/tsetup.%{version}.tar.xz
+Source1:	%{url}/releases/download/%{lastversion_tag}/td-setup-linux-x64-%{version}.tar.xz
 
 Source2:	telegram.png
 Source3:	telegram.desktop
@@ -91,6 +91,7 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %changelog
 * Tue Sep 08 2026 Danila Vershinin <info@getpagespeed.com> - 7.2.7-1
 - Fix crashes caused by invalid lottie files.
+- Follow upstream rename of the Linux binary asset to td-setup-linux-x64.
 
 
 * Sat Sep 05 2026 Danila Vershinin <info@getpagespeed.com> - 7.2.5-1
