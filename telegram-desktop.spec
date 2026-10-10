@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    7.2.9
+Version:    7.3.0
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,15 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Sat Oct 10 2026 Danila Vershinin <info@getpagespeed.com> - 7.3.0-1
+- Introduced new money transfer feature.
+- Enhanced user interface for financial transactions.
+- Improved security for payment processing.
+- Fixed bugs related to transaction history.
+- Updated dependencies for better performance.
+- Enhanced compatibility with latest operating systems.
+
+
 * Fri Sep 18 2026 Danila Vershinin <info@getpagespeed.com> - 7.2.9-1
 - upstream release v7.2.9
 
