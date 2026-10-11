@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    7.3.0
+Version:    7.3.1
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,14 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Sun Oct 11 2026 Danila Vershinin <info@getpagespeed.com> - 7.3.1-1
+- Fix wallet encryption failure with Windows Hello.
+- Resolve issue with saving same passcode in wallet.
+- Prevent copy-restricted media from reaching Downloads.
+- Correct date color issues in custom themes.
+- Remove Link attachment option in photo editor.
+
+
 * Sat Oct 10 2026 Danila Vershinin <info@getpagespeed.com> - 7.3.0-1
 - Introduced new money transfer feature.
 - Enhanced user interface for financial transactions.
