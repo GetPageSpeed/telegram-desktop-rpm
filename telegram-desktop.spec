@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    7.3.1
+Version:    7.3.2
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,14 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Wed Oct 21 2026 Danila Vershinin <info@getpagespeed.com> - 7.3.2-1
+- Added support for replying to rich messages.
+- Users can now move gifts to their Money card.
+- Money card customization with unique gifts introduced.
+- New QR code design for public usernames.
+- Migrated to Qt 6 for improved Windows compatibility.
+
+
 * Sun Oct 11 2026 Danila Vershinin <info@getpagespeed.com> - 7.3.1-1
 - Fix wallet encryption failure with Windows Hello.
 - Resolve issue with saving same passcode in wallet.
