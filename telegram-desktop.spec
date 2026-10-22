@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    7.3.2
+Version:    7.3.3
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,16 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Thu Oct 22 2026 Danila Vershinin <info@getpagespeed.com> - 7.3.3-1
+- Display TON DNS gift owners as clickable links.
+- Resolve green video tint issue with D3D9 on Windows.
+- Fix unusable media viewer transparency with ANGLE on Windows.
+- Correct '?' typing issue showing Shortcuts legend.
+- Ensure text rendering adheres to system settings on Windows.
+- Address Chinese character display on older Windows versions.
+- Fix potential crash during context loss on Windows.
+
+
 * Wed Oct 21 2026 Danila Vershinin <info@getpagespeed.com> - 7.3.2-1
 - Added support for replying to rich messages.
 - Users can now move gifts to their Money card.
