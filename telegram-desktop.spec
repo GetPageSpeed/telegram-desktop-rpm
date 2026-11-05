@@ -9,7 +9,7 @@
 
 Summary:	Telegram is a new era of messaging
 Name:		telegram-desktop
-Version:    7.3.3
+Version:    7.3.5
 Release: 1%{?dist}
 
 Group:		Applications/Internet
@@ -89,6 +89,16 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{name}.ap
 %{_datadir}/appdata/%{name}.appdata.xml
 
 %changelog
+* Thu Nov 05 2026 Danila Vershinin <info@getpagespeed.com> - 7.3.5-1
+- Request camera and microphone access in mini apps on Windows and macOS.
+- Resolve custom download folder settings reset issue.
+- Fix maximized window jitter on Windows.
+- Correct notifications moving off screen on Windows.
+- Address missing notifications in bots with topics.
+- Fix exports of migrated groups missing old history.
+- Resolve code blocks losing first line indentation.
+
+
 * Thu Oct 22 2026 Danila Vershinin <info@getpagespeed.com> - 7.3.3-1
 - Display TON DNS gift owners as clickable links.
 - Resolve green video tint issue with D3D9 on Windows.
